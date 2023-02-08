@@ -45,7 +45,7 @@ class DetailPengumumanView extends GetView<DetailPengumumanController> {
       ),
       body: Column(
         children: [
-          dataPengumuman['fotoPengumuman'] == null
+          tempImage.isNotEmpty
               ? CarouselSlider(
                   items: tempImage,
                   options: CarouselOptions(
